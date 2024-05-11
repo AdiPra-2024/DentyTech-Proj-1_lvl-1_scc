@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: xyz;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+nav{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+#part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    height: 68%;
+    width: 100%;
+    padding: 14px;
+
+}
+#part1 h3{
+    font-size: 16px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 5px 8px;
+    border-radius: 50px;
+}
+#part1 i{
+    font-size: 16px;
+    border: 1.5px solid black;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+#part2 h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+}
+#btn1{
+    border-radius: 50px;    
+    padding: 7px 12px;
+    border: 1.5px solid black;
+    font-size: 16px;
+    font-weight: 500;   
+}
+#btn2{
+    border-radius: 50px;    
+    padding: 7px 12px;
+    background-color: orangered;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+#middle{
+    color:black;
+    font-size: 130px;
+    text-transform: uppercase;
+    white-space: nowrap; /* to bring to center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+img{
+    height: 350px;
+    width: 300px;
+    object-fit: cover;/*used when img tag is used: to cover the image whole within the defined size, if not used image gets supressed. in case of bckg image for same work, use background-size:cover */
+    object-position: top; /* to show the top part of the image */
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform not used as its used below */
+}
+/* rotate is an attribute under transform used to rotate image by required amount. it is used after translate becoz if not used then it would have over written the translate and only rotate would work. */
+#img1{
+    transform: translate(-50%,-50%) rotate(-30deg);
+}
+#img2{
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+#img4{
+    transform: translate(-50%,-50%);
+}
+/* #btm-left{
+    color: black;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-weight: 550;
+    font-size: 16px;
+}
+.btm-right{
+    color: black;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-weight: 550;
+    font-size: 16px;
+} */
+footer{
+    font-size: 16px;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+footer i{ /* for the down arrow menu */
+    font-size: 55px;
+}
+/* footer {
+
+} */
+footer img{
+    height: 50px;
+    width: 200px;
+    position: relative;
+    left: 10px;
+}
+/* 
+ask how to make changes in footer
+ask how to make circle arrow down
+ask about commented codes
+ask how to maintain div
+changes made and why 
+height is more, bring in one page no scroll
+*/
